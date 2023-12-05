@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --ana-renk:rgb(153, 5, 25);
+}
+
+
+header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    box-shadow: rgba(235, 141, 18, 0.35)  0px 5px 15px;
+}
+
+header .title{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+header .title h1{
+    color: rgb(172, 169, 162);
+}
+
+header .title h1 span{
+    color: var(--ana-renk);
+}
+
+header .title a{
+    font-size: 50px;
+    color:var(--ana-renk);
+}
+
+header nav ul {
+    display: flex;
+    gap: 1.25rem;
+}
+
+header nav ul a{
+  text-decoration: none;  
+  color: rgb(255, 136, 0);
+}
+
+header nav ul a:hover {
+    color: var(--ana-renk);
+}
+
+header nav ul a i {
+    color: var(--ana-renk);
+}
+
+section {
+display: flex;
+align-items: center;
+height: 90vh;
+width: 100%;
+padding: 15px;
+}
+
+section .sec-left{
+text-align: center;
+flex: 1;
+}
+
+section.images{
+flex: 1;
+height: 100%;
+}
+
+section .sec-left h1{
+font-size: 35px;
+color: rgb(172, 169, 162);
+margin-bottom: 25px;
+}
+
+section .sec-left h1 span {
+    color:var(--ana-renk);
+}
+
+section .sec-left p{
+    font-size: 16px;
+}
+
+section button{
+    padding: 5px 10px;
+    border:none;
+    background-color: var(--ana-renk);
+    color: rgb(41, 40, 40);
+    border-radius: 8px;
+    font-size: 15px;
+    margin-top: 15px;
+    text-decoration:gray;
+    cursor: pointer;
+    transition: 400ms;
+}
+   
+
+
+
+section button:hover{
+   background-color: gray;
+   transition: 500ms;
+   scale: 0.9;
+}
+
+
+
+.course-info{
+   display: flex;
+   align-items: center;
+   text-align: center;
+   background-color: coral;
+   padding: 15px;
+   height: 40vh;
+   width: 100%;
+   margin-top: 50px;
+   position: relative;
+  
+}
+
+.p-sec,
+.image-sec{
+    flex: 1;
+
+}
+
+.image-sec img{
+    width: 400px;
+}
+.course-info .p-sec h1{
+background-color: var(--ana-renk);
+padding: 20px;
+width: 100%;
+position:relative;
+top: -20px;
+border-bottom-right-radius: 60px;
+color:gray;
+
+}
+
+.course-info .p-sec p{
+    font-size: 17px;
+    color:gray
+
+}
+.course-info .p-sec button {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--ana-renk);
+    color: gray;
+    margin-top: 20px;
+    cursor: pointer;
+
+}
+
+
+
+
+footer{
+    padding: 20px;
+    margin: 100px;
+    border-top: 1px solid var(--ana-renk);
+}
+
+footer .footer-start{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+}
+
+footer .footer-start .footer-area {
+   display: flex; 
+   flex-direction: column;
+   gap: 35px;
+}
+
+
+footer .footer-start .footer-area a{
+    text-decoration: none;
+    color: rgb(255, 136, 0);
+
+}
+
+footer .bottom {
+    text-align: center;
+    margin-top: 50px;
+    border-top: 1px solid var(--ana-renk);
+}
+
+footer .footer-start .footer-area h2 {
+    color: rgb(172, 169, 162);
+    gap: 20px;
+    font-size: large;
+   font-family: fantasy;
+}
